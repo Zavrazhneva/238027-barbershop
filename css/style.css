@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight:bold;
+}
+h1 {
+	font-size: 30px;
+	color: #000000;
+	}
+header {
+	background-color: #000000;
+}
+.primary-nav a {
+	color: #ffffff;
+	font-size: 16px;
+}
