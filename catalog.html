@@ -58,7 +58,9 @@
 			<div class="catalog">
 				<form action="" method="post">
 					<div class="checkbox-list">
-						<h2>Производители</h2>
+						<fieldset>
+							<legend>Производители</legend>
+						</fieldset>
 						<input id="Baxter" type="checkbox" name="baxter-of-california">
 						<label for="Baxter">Baxter of california</label>
 						<input id="mr-natty" type="checkbox" name="mr-natty">
@@ -73,7 +75,9 @@
 						<label for="American-crew">American crew</label>
 					</div>
 					<div class="radiobutton-list">
-						<h2>Группы товаров</h2>
+						<fieldset>
+							<legend>Группы товаров</legend>
+						</fieldset>
 						<input id="razor" type="radio" name="razor">
 						<label for="razor">Бритвенные принадлежности</label>
 						<input id="care" type="radio" name="care">
@@ -81,7 +85,7 @@
 						<input id="accessory" type="radio" name="accessory">
 						<label for="accessory">Аксессуары</label>
 					</div>
-					<button type="button">Показать</button>
+					<button type="submit">Показать</button>
 				</form>
 				<div class="product-grid">
 					<article>
@@ -153,16 +157,16 @@
 				</div>
 				<ul class="pagination">
 					<li class="page-number">
-						<a>1</a>
+						<a href="">1</a>
 					</li>
-					<li class="page-number">
+					<li class="page-number-activ">
 						<a>2</a>
 					</li>
 					<li class="page-number">
-						<a>3</a>
+						<a href="">3</a>
 					</li>
 					<li class="page-number">
-						<a>4</a>
+						<a href="">4</a>
 					</li>
 				</ul>
 			</div>
