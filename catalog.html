@@ -7,8 +7,8 @@
 </head>
 <body>
 <header>
-    <div class="container">
-        <div>
+    <div class="container clearfix">
+        <div class="logo">
             <a href="">
                 <img src="img/logo/logo.png" alt="лого" width="" height="">
             </a>
@@ -53,130 +53,153 @@
         </ul>
     </div>
     <div class="catalog">
-        <form action="" method="post">
-            <div class="checkbox-list">
-                <fieldset>
-                    <legend>Производители</legend>
-                    <input id="Baxter" type="checkbox" name="baxter-of-california">
-                    <label for="Baxter">Baxter of california</label>
-                    <input id="mr-natty" type="checkbox" name="mr-natty">
-                    <label for="mr-natty">Mr natty</label>
-                    <input id="suavecito" type="checkbox" name="suavecito">
-                    <label for="suavecito">Suavecito</label>
-                    <input id="malin-goetz" type="checkbox" name="malin-goetz">
-                    <label for="malin-goetz">Malin-goetz</label>
-                    <input id="murrays" type="checkbox" name="murrays">
-                    <label for="murrays">Murrays</label>
-                    <input id="American-crew" type="checkbox" name="American-crew">
-                    <label for="American-crew">American crew</label>
-                </fieldset>
+        <div class="clearfix">
+            <form class="catalog-filter" action="" method="post">
+                <div class="checkbox-list">
+                    <fieldset>
+                        <legend>Производители</legend>
+                        <div class="input-wrp">
+                            <input id="Baxter" type="checkbox" name="baxter-of-california">
+                            <label for="Baxter">Baxter of california</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="mr-natty" type="checkbox" name="mr-natty">
+                            <label for="mr-natty">Mr natty</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="suavecito" type="checkbox" name="suavecito">
+                            <label for="suavecito">Suavecito</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="malin-goetz" type="checkbox" name="malin-goetz">
+                            <label for="malin-goetz">Malin-goetz</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="murrays" type="checkbox" name="murrays">
+                            <label for="murrays">Murrays</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="American-crew" type="checkbox" name="American-crew">
+                            <label for="American-crew">American crew</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="radiobutton-list">
+                    <fieldset>
+                        <legend>Группы товаров</legend>
+                        <div class="input-wrp">
+                            <input id="razor" type="radio" name="razor">
+                            <label for="razor">Бритвенные принадлежности</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="accessory" type="radio" name="accessory">
+                            <label for="accessory">Аксессуары</label>
+                        </div>
+                        <div class="input-wrp">
+                            <input id="care" type="radio" name="care">
+                            <label for="care">Средства для ухода</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit">Показать</button>
+            </form>
+            <div class="catalog-content">
+                <div class="product-grid clearfix">
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer38.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Набор для путешествий
+                            "Baxter of california"</h2>
+                        <div class="product-price">
+                            <span>2900 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer30.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Увлажняющий кондиционер
+                            "Baxter of california"</h2>
+                        <div class="product-price">
+                            <span>750 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer39.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Гель для волос
+                            "Suavecito"</h2>
+                        <div class="product-price">
+                            <span>290 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer32.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Глина для укладки волос
+                            "American crew"</h2>
+                        <div class="product-price">
+                            <span>500 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer33.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Гель для волос
+                            "American crew"</h2>
+                        <div class="product-price">
+                            <span>300 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                    <article class="catalog-item">
+                        <a href="">
+                            <img src="img/goods/layer42.jpg" alt="товар" width="220" height="165">
+                        </a>
+                        <h2>Набор для бритья
+                            "Baxter of california"</h2>
+                        <div class="product-price">
+                            <span>3900 руб.</span>
+                            <a href="">Купить</a>
+                        </div>
+                    </article>
+                </div>
+                <ul class="pagination">
+                    <li class="page-number">
+                        <a href="">1</a>
+                    </li>
+                    <li class="page-number-activ">
+                        <a>2</a>
+                    </li>
+                    <li class="page-number">
+                        <a href="">3</a>
+                    </li>
+                    <li class="page-number">
+                        <a href="">4</a>
+                    </li>
+                </ul>
             </div>
-            <div class="radiobutton-list">
-                <fieldset>
-                    <legend>Группы товаров</legend>
-                    <input id="razor" type="radio" name="razor">
-                    <label for="razor">Бритвенные принадлежности</label>
-                    <input id="care" type="radio" name="care">
-                    <label for="care">Средства для ухода</label>
-                    <input id="accessory" type="radio" name="accessory">
-                    <label for="accessory">Аксессуары</label>
-                </fieldset>
-            </div>
-            <button type="submit">Показать</button>
-        </form>
-        <div class="product-grid">
-            <article>
-                <a href="">
-                    <img src="img/goods/layer38.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Набор для путешествий
-                    "Baxter of california"</h2>
-                <div class="product-price">
-                    <span>2900 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
-            <article>
-                <a href="">
-                    <img src="img/goods/layer30.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Увлажняющий кондиционер
-                    "Baxter of california"</h2>
-                <div class="product-price">
-                    <span>750 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
-            <article>
-                <a href="">
-                    <img src="img/goods/layer39.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Гель для волос
-                    "Suavecito"</h2>
-                <div class="product-price">
-                    <span>290 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
-            <article>
-                <a href="">
-                    <img src="img/goods/layer32.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Глина для укладки волос
-                    "American crew"</h2>
-                <div class="product-price">
-                    <span>500 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
-            <article>
-                <a href="">
-                    <img src="img/goods/layer33.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Гель для волос
-                    "American crew"</h2>
-                <div class="product-price">
-                    <span>300 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
-            <article>
-                <a href="">
-                    <img src="img/goods/layer42.jpg" alt="товар" width="220" height="165">
-                </a>
-                <h2>Набор для бритья
-                    "Baxter of california"</h2>
-                <div class="product-price">
-                    <span>3900 руб.</span>
-                    <a href="">Купить</a>
-                </div>
-            </article>
         </div>
-        <ul class="pagination">
-            <li class="page-number">
-                <a href="">1</a>
-            </li>
-            <li class="page-number-activ">
-                <a>2</a>
-            </li>
-            <li class="page-number">
-                <a href="">3</a>
-            </li>
-            <li class="page-number">
-                <a href="">4</a>
-            </li>
-        </ul>
+
     </div>
 </div>
-<footer>
-    <div class="container">
-        <div>
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="footer-left">
             <p>Барбершоп "Бородинский" <br>
                 Адрес: г.Санкт-Петербург, ул.Б.Конюшенная,д.19/8 <br>
                 <a href="">Как нас найти?</a> <br>
                 Телефон:+7(495)666-02-66</p>
         </div>
-        <div>
+        <div class="footer-center">
             <p>Давайте дружить!</p>
             <a href="">
                 <img src="img/social/v.png" alt="вк" width="" height="">
@@ -188,7 +211,7 @@
                 <img src="img/social/in.png" alt="инстаграмм" width="" height="">
             </a>
         </div>
-        <div>
+        <div class="footer-right">
             <p>Разработано:</p>
             <a href="">Htmlacademy.ru</a>
         </div>
